@@ -36,6 +36,9 @@
     "sass-loader": "^8.0.2",
     "styled-components": "^4.4.1"
   },
+  "engines": {
+    "node": "10.16.0"
+  },
   "scripts": {
     "startlocally": "concurrently \" react-scripts start\" \"node backend/server.js\"",
     "build": "react-scripts build",
