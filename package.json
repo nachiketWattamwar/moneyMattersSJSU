@@ -47,7 +47,7 @@
     "build_webpack": "webpack --mode development"
   },
   "engines": {
-    "node": "10.16.0"
+    "node": "6.9.0"
   },
   "eslintConfig": {
     "extends": "react-app"
