@@ -84,6 +84,11 @@ app.post("/signup", (req, res) => {
   res.send("from sgnup api");
 });
 
-app.listen(3001, () =>
+app.use(express.static(path.join(__dirname, "../build")));
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../build"));
+});
+const port = process.env.PORT || 3001;
+app.listen(port, () =>
   console.log("Express server is running on localhost:3001")
 );
