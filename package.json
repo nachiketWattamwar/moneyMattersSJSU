@@ -20,6 +20,7 @@
     "mongoose": "^5.7.12",
     "node-sass": "^4.13.1",
     "nodemon": "^1.19.4",
+    "path": "^0.12.7",
     "react": "^16.10.2",
     "react-chartjs-2": "^2.8.0",
     "react-data-table-component": "^4.0.0",
@@ -38,16 +39,13 @@
   "scripts": {
     "startlocally": "concurrently \" react-scripts start\" \"node backend/index.js\"",
     "build": "react-scripts build",
-    "start": "node backend/index.js",
+    "start": "node backend/server.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build_webpack": "webpack --mode development"
-  },
-  "engines": {
-    "node": "6.9.0"
   },
   "eslintConfig": {
     "extends": "react-app"
