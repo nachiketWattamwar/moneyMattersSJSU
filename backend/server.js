@@ -1,6 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const { mongoose } = require("../backend/db/mongoose");
+const { mongoose } = require("./db/mongoose");
 const path = require("path");
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
